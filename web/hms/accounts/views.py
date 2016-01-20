@@ -4,7 +4,7 @@ from django.contrib.auth import authenticate, login, logout
 from accounts.forms import signinform, signupform
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
-
+from .models import UserProfile
 
 
 
@@ -64,6 +64,8 @@ def signup(request):
                 user.first_name = first_name
                 user.last_name = last_name
                 user.save()
+                profile = UserProfile.objects.create(user=user,role='')
+                profile.save()
                 user = authenticate(username=username, password=password)
                 login(request, user)
                 return HttpResponseRedirect('/')
