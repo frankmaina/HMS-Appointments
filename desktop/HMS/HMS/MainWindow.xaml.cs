@@ -25,6 +25,21 @@ namespace HMS
         public MainWindow()
         {
             InitializeComponent();
+
+            //check if there is internet connection
+            //not the most efficient way to do this
+            Boolean status = CustomHttp.check_connection();
+            if (status)
+            {
+                connectionStatus.Content = "Connected";
+                connectionStatus.Foreground = new SolidColorBrush(Colors.Green);
+            }
+            else
+            {
+                connectionStatus.Content = "Not Connected";
+                connectionStatus.Foreground = new SolidColorBrush(Colors.Red);
+            }
+
         }
 
 
@@ -37,9 +52,25 @@ namespace HMS
                 String password = passwordTxt.Text;
 
                 //launch authentication request
-                CustomHttp.HttpGet("http://www.google.com");
+                /* Basically communicate to the Web server to auhtenticate
+                 * the user. */
+                CustomHttp.MyObject response = CustomHttp.JsonHttpGet("http://127.0.0.1:8000/api/validate/user?username=" + username + "&password=" + password);
 
-                MessageBox.Show("Done");
+                if (response.result == "OK")
+                {
+                    //successful login.
+                    //we save the credentials here in a local db
+                    Window dashboard = new dashboard();
+                    dashboard.Show();
+                    Window login = new MainWindow();
+                    this.Close();
+
+                    
+                }
+                else
+                {
+                    MessageBox.Show(response.reason);
+                }
             }
             catch (Exception err)
             {
@@ -47,14 +78,7 @@ namespace HMS
 
             }
 
-
-
-
-
-
         }
-
-        
 
     }
 }

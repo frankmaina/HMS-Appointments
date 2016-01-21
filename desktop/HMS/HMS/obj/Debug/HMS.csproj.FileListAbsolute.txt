@@ -1,11 +1,6 @@
 C:\frank\HMS-Appointments\desktop\HMS\HMS\bin\Debug\HMS.exe.config
 C:\frank\HMS-Appointments\desktop\HMS\HMS\bin\Debug\HMS.exe
 C:\frank\HMS-Appointments\desktop\HMS\HMS\bin\Debug\HMS.pdb
-C:\frank\HMS-Appointments\desktop\HMS\HMS\bin\Debug\MahApps.Metro.dll
-C:\frank\HMS-Appointments\desktop\HMS\HMS\bin\Debug\System.Windows.Interactivity.dll
-C:\frank\HMS-Appointments\desktop\HMS\HMS\bin\Debug\MahApps.Metro.pdb
-C:\frank\HMS-Appointments\desktop\HMS\HMS\bin\Debug\MahApps.Metro.xml
-C:\frank\HMS-Appointments\desktop\HMS\HMS\obj\Debug\HMS.csprojResolveAssemblyReference.cache
 C:\frank\HMS-Appointments\desktop\HMS\HMS\obj\Debug\MainWindow.baml
 C:\frank\HMS-Appointments\desktop\HMS\HMS\obj\Debug\App.baml
 C:\frank\HMS-Appointments\desktop\HMS\HMS\obj\Debug\MainWindow.g.cs
@@ -16,3 +11,15 @@ C:\frank\HMS-Appointments\desktop\HMS\HMS\obj\Debug\HMS.Properties.Resources.res
 C:\frank\HMS-Appointments\desktop\HMS\HMS\obj\Debug\HMS.csproj.GenerateResource.Cache
 C:\frank\HMS-Appointments\desktop\HMS\HMS\obj\Debug\HMS.exe
 C:\frank\HMS-Appointments\desktop\HMS\HMS\obj\Debug\HMS.pdb
+C:\frank\HMS-Appointments\desktop\HMS\HMS\bin\Debug\MaterialDesignColors.dll
+C:\frank\HMS-Appointments\desktop\HMS\HMS\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\frank\HMS-Appointments\desktop\HMS\HMS\bin\Debug\HMS.exe.manifest
+C:\frank\HMS-Appointments\desktop\HMS\HMS\bin\Debug\HMS.application
+C:\frank\HMS-Appointments\desktop\HMS\HMS\obj\Debug\HMS.TrustInfo.xml
+C:\frank\HMS-Appointments\desktop\HMS\HMS\obj\Debug\HMS.exe.manifest
+C:\frank\HMS-Appointments\desktop\HMS\HMS\obj\Debug\HMS.application
+C:\frank\HMS-Appointments\desktop\HMS\HMS\bin\Debug\Newtonsoft.Json.dll
+C:\frank\HMS-Appointments\desktop\HMS\HMS\bin\Debug\Newtonsoft.Json.xml
+C:\frank\HMS-Appointments\desktop\HMS\HMS\obj\Debug\HMS.csprojResolveAssemblyReference.cache
+C:\frank\HMS-Appointments\desktop\HMS\HMS\obj\Debug\dashboard.baml
+C:\frank\HMS-Appointments\desktop\HMS\HMS\obj\Debug\dashboard.g.cs
