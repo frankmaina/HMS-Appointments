@@ -7,7 +7,6 @@ from django.contrib.auth.decorators import login_required
 from .models import UserProfile
 
 
-
 def signin(request):
     if request.method == 'POST':  # check request method
         # collect POST data
@@ -16,11 +15,13 @@ def signin(request):
         form = signinform(request.POST)
         if form.is_valid():  # if form has no errors
             try:
-                user = User.objects.get(username=username)  # check if the user exists
+                # check if the user exists
+                user = User.objects.get(username=username)
                 user = authenticate(username=username, password=password)
                 if user is not None:
                     if user.is_active:
-                        login(request, user)  # authentication past user is free to login
+                        # authentication past user is free to login
+                        login(request, user)
                         return HttpResponseRedirect('/')
                     else:
                         return HttpResponse("Account is not active")
@@ -64,7 +65,7 @@ def signup(request):
                 user.first_name = first_name
                 user.last_name = last_name
                 user.save()
-                profile = UserProfile.objects.create(user=user,role='')
+                profile = UserProfile.objects.create(user=user, role='')
                 profile.save()
                 user = authenticate(username=username, password=password)
                 login(request, user)

@@ -5,5 +5,5 @@ import api.views
 
 
 urlpatterns = [
-  url(r'^validate/user/', api.views.validate, name='home')
+    url(r'^validate/user/', api.views.validate, name='home')
 ]
