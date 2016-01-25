@@ -48,20 +48,22 @@ namespace HMS
             //get input values from input fileds
             try
             {
-                String username = usernameTxt.Text;
-                String password = passwordTxt.Text;
+                String username = "apitest";
+                String password = "apitest";
 
                 //launch authentication request
                 /* Basically communicate to the Web server to auhtenticate
                  * the user. */
                 CustomHttp.MyObject response = CustomHttp.JsonHttpGet("http://127.0.0.1:8000/api/validate/user?username=" + username + "&password=" + password);
 
+
                 if (response.result == "OK")
                 {
                     //successful login.
                     //we save the credentials here in a local db
-                    Window dashboard = new dashboard();
+                    Window dashboard = new dashboard(response);
                     dashboard.Show();
+                    //close the login window
                     Window login = new MainWindow();
                     this.Close();
 

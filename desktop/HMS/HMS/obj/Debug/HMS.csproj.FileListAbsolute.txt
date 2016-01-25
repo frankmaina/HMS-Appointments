@@ -23,3 +23,8 @@ C:\frank\HMS-Appointments\desktop\HMS\HMS\bin\Debug\Newtonsoft.Json.xml
 C:\frank\HMS-Appointments\desktop\HMS\HMS\obj\Debug\HMS.csprojResolveAssemblyReference.cache
 C:\frank\HMS-Appointments\desktop\HMS\HMS\obj\Debug\dashboard.baml
 C:\frank\HMS-Appointments\desktop\HMS\HMS\obj\Debug\dashboard.g.cs
+C:\frank\HMS-Appointments\desktop\HMS\HMS\bin\Debug\EntityFramework.dll
+C:\frank\HMS-Appointments\desktop\HMS\HMS\bin\Debug\EntityFramework.SqlServer.dll
+C:\frank\HMS-Appointments\desktop\HMS\HMS\bin\Debug\EntityFramework.xml
+C:\frank\HMS-Appointments\desktop\HMS\HMS\bin\Debug\EntityFramework.SqlServer.xml
+C:\frank\HMS-Appointments\desktop\HMS\HMS\obj\Debug\HMS.Form1.resources

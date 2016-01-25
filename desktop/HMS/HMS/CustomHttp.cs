@@ -11,7 +11,7 @@ using Newtonsoft.Json.Linq;
 
 namespace HMS
 {
-    class CustomHttp
+    public class CustomHttp
     {
 
         //JSON object to parse response from authentication

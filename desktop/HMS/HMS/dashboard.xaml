@@ -2,7 +2,11 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="dashboard" Height="414" Width="666">
-    <Grid Margin="0,0,0,-20">
-        
+    <Grid Margin="0,0,2,5">
+        <Label x:Name="UserText" Content="Label" HorizontalAlignment="Left" Margin="482,0,0,0" VerticalAlignment="Top" Height="29" Width="166"/>
+        <Button x:Name="NewForm" Content="New Appointment Form" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Width="211" Height="47" Click="NewForm_Click"/>
+        <Button x:Name="NewForm_Copy" Content="View Appointment Forms" HorizontalAlignment="Left" Margin="255,66,0,0" VerticalAlignment="Top" Width="211" Height="47"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="219" Margin="10,140,0,0" Stroke="Black" VerticalAlignment="Top" Width="636"/>
+
     </Grid>
 </Window>
