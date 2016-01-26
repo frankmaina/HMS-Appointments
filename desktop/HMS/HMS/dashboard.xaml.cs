@@ -29,7 +29,7 @@ namespace HMS
             // TODO: Complete member initialization
             this.response = response;
 
-            UserText.Content = response.first_name + " " + response.last_name;
+            UserText.Content = "Logged in as "+response.first_name + " " + response.last_name;
         }
 
         private void NewForm_Click(object sender, RoutedEventArgs e)
